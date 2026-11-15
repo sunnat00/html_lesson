@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Sementics</title>
     <style>
+        .box {
+            background-color: blue;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
         header {
             background-color: blue;
             height: 100px;
@@ -27,8 +34,31 @@
 
         section {
             height: 500px;
-            margin-top: 1px;
+            margin-top: 10px;
             line-height: 500px;
+            text-align: center;
+            width: 70%;
+            color: white;
+            float: left;
+        }
+
+        aside {
+            height: 500px;
+            margin-top: 10px;
+            line-height: 500px;
+            text-align: center;
+            width: 30%;
+            color: white;
+            float: left;
+
+        }
+
+        footer {
+            height: 100px;
+            margin-top: 10px;
+            line-height: 100px;
+            float: left;
+            width: 100%;
         }
     </style>
 </head>
@@ -61,15 +91,21 @@
 
 
 <body>
-    <header>
+    <header class="box">
         Header
     </header>
-    <nav>
+    <nav class="box">
         Navigation
     </nav>
     <section class="box">
         SECTION
     </section>
+    <aside class="box">
+        ASIDE
+    </aside>
+    <footer class="box">
+        Footer
+    </footer>
 
 
 
